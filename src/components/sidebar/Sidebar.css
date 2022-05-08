@@ -1,0 +1,72 @@
+.Sidebar{
+    display: flex;
+    flex-direction:  column;
+    position: relative;
+    padding-top: 4rem;
+    transform: all 300ms ease;
+}
+
+.logo{
+    display: flex;
+    height: 5rem;
+    font-weight: bold;
+    font-size:  22px;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+    height: 4%;
+}
+
+.logo > img{
+    width: 3rem;
+    height: 3rem;
+}
+
+.logo > span > span{
+    color: var(--pink);
+}
+
+.menu{
+    margin-top:  4rem;
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.menu .menuItem{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    width: 100%;
+    height: 2.5rem;
+    margin-left: 2rem;
+    position: relative;
+    transition: all 300ms ease;
+    font-size: 14px;
+    border-radius: 0.5rem;
+}
+
+.menu .menuItem:hover{
+    cursor: pointer;
+}
+
+.menuItem.active{
+    margin-left: 0rem;
+    background: var(--activeItem);
+}
+
+.menuItem.active::before{
+    content: "";
+    width: 8px;
+    height: 100%;
+    background: var(--pink);
+    margin-right: calc(1rem - 8px);
+}
+
+.menuItem:last-child{
+    position: absolute;
+    bottom: 2.4rem;
+    width: 100%;
+}
+
+
