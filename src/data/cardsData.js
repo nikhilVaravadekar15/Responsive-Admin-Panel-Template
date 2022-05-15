@@ -1,35 +1,9 @@
 import {
-    UilEstate,
     UilClipboardAlt,
-    UilUsersAlt,
-    UilPackage,
-    UilChart,
-    // UilSignOutAlt,
+    UilMoneyWithdrawal,
     UilUsdSquare
 } from "@iconscout/react-unicons"
 
-export const  SidebarData = [
-    {
-        icon: UilEstate,
-        heading: "Dashboard"
-    },
-    {
-        icon: UilClipboardAlt,
-        heading: "Orders"
-    },
-    {
-        icon: UilUsersAlt,
-        heading: "Customers"
-    },
-    {
-        icon: UilPackage,
-        heading: "Products"
-    },
-    {
-        icon: UilChart,
-        heading: "Analytics"
-    }
-]
 
 export const cardsData = [
     {
@@ -56,7 +30,7 @@ export const cardsData = [
         },
         barValue: 80,
         value: "14,270",
-        png: UilUsdSquare,
+        png: UilMoneyWithdrawal,
         series: [
             {
                 name: "Revenue",

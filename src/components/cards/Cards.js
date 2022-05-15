@@ -1,8 +1,8 @@
 import React from 'react'
-
 import "./Cards.css"
-import { cardsData } from '../../data/data'
+
 import Card from '../card/Card'
+import { cardsData } from '../../data/cardsData'
 
 function Cards() {
 

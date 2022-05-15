@@ -1,0 +1,47 @@
+.Updates{
+    width: 100%;
+    background: white;
+    border-radius: 0.7rem;
+    padding: 1rem;
+    padding: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.update{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    padding: 0.5rem;
+    margin-bottom: 0.5rem;
+    border-radius: 1rem;
+}
+
+.update:hover{
+    box-shadow: 0px 1px 2px 0px rgba(0, 0, 0, 0.2);
+}
+
+.update > img{
+    width: 3.2rem;
+    height: 3.2rem;
+    cursor: pointer;
+}
+
+.notification > div > span:nth-child(1){
+    font-weight: bold;
+    font-size: 14px;
+}
+.notification > div > span:nth-child(2){
+    font-size: 14px;
+    text-transform: lowercase;
+}
+
+.notification > .updateItem-time{
+    font-size: 10px;
+    margin: -18px 0;
+}
+
+

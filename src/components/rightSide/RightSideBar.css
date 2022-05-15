@@ -1,0 +1,10 @@
+.RightSideBar{
+    width: 96%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+
+.RightSideBar .RightSideBar-text{
+    text-align: start;
+}
