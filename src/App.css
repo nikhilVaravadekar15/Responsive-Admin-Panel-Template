@@ -42,4 +42,5 @@
   overflow: hidden;
   background: var(--glass);
   grid-template-columns: 11rem  auto 20rem;
+  gap: 10px;
 }

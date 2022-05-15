@@ -1,10 +1,14 @@
 import React from 'react'
 import "./MainDash.css"
+import Cards from '../cards/Cards'
+import BasicTable from '../table/Table'
 
 function MainDash() {
   return (
      <div className="MainDash">
-        MainDash
+        <h1>Dashboard</h1>
+        <Cards />
+        <BasicTable />
      </div>
   )
 }
