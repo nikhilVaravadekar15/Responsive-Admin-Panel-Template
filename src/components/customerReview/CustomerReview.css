@@ -1,0 +1,11 @@
+@media screen and (max-width: 768px) {
+    .CustomerReview{
+        width: 70%;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .CustomerReview{
+        width: 80%;
+    }
+}

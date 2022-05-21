@@ -69,4 +69,45 @@
     width: 100%;
 }
 
+.Sidebar__bars{
+    display: none;
+}
 
+@media screen and (max-width: 1200px) {
+    .menuItem > span{
+        display: none;
+    }
+
+    .logo{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Sidebar{
+        position: fixed;
+        z-index: 9;
+        background-color: #ffe0e0;
+        width: 48%;
+        padding-right: 1rem;
+        height: 100%;
+    }
+
+    .menuItem > span{
+        display: block;
+    }
+
+    .logo{
+        display: flex;
+    }
+
+    .Sidebar__bars{
+        display: flex;
+        position: fixed;
+        top: 1rem;
+        z-index: 9;
+        background-color: #ffe0e0;
+        padding: 8px;
+        border-radius: 4px;
+    }
+}

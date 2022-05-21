@@ -5,6 +5,47 @@
     flex-direction: column;
 }
 
+.RightSideBar-CustomerReview{
+    margin-top: 1.5rem;
+}
+
 .RightSideBar .RightSideBar-text{
     text-align: start;
 }
+
+@media screen and (max-width: 1200px) {
+    .RightSideBar{
+        justify-content: flex-start;
+        margin-top: 3rem;
+    }
+
+    .RightSideBar-CustomerReview{
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    .RightSideBar{
+        width: 100%;
+        margin-top: 2rem;
+    }
+    
+    .RightSideBar > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .RightSideBar{
+        width: 82%;
+        margin-top: 1rem;
+    }
+
+    .RightSideBar-text{
+        margin: 8px 0;
+    }
+}
+

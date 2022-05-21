@@ -1,3 +1,7 @@
+.MuiPaper-root{
+    border-radius: 8px !important;    
+}
+
 .MuiTableRow-root:hover{
     background: rgb(250, 250, 250);
 }
@@ -26,4 +30,36 @@
 .Table .details{
     color: #00b5ff !important;
     cursor: pointer;
+}
+
+@media screen and (max-width: 1200px) {
+    .Table{
+        width: 170%;
+        margin-top: 7rem;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .Table{
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 96%;
+    }
+    .Table::-webkit-scrollbar{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 540px) {
+    .Table{
+        width: 96%;
+        margin-top: 1rem;
+    }
+
+    .MuiPaper-root{
+        margin: 8px 0;
+        padding: 8px 0;
+    }
 }

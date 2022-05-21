@@ -6,11 +6,11 @@ import "./RightSideBar.css"
 function RightSideBar() {
   return (
     <div className="RightSideBar">
-        <div>
+        <div className='RightSideBar-Updates'>
             <h3 className='RightSideBar-text'>Updates</h3>
             <Updates/>
         </div>
-        <div>
+        <div className='RightSideBar-CustomerReview'>
             <h3 className='RightSideBar-text'>Customer Review</h3>
             <CustomerReview />
         </div>

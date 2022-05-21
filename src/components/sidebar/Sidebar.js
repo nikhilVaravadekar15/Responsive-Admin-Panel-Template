@@ -1,14 +1,17 @@
 import React, { useState } from 'react'
-import "./Sidebar.css"
+import {UilSignOutAlt, UilBars} from "@iconscout/react-unicons"
+import { motion } from 'framer-motion'
 
-import Logo from "../../images/logo.png"
 import { SidebarData } from '../../data/leftSidebarData'
-import {UilSignOutAlt} from "@iconscout/react-unicons"
+
+import "./Sidebar.css"
+import Logo from "../../images/logo.png"
 
 function Sidebar() {
 
     const [selected, setSelected] = useState(0);
-
+    const [sideBarExpanded, setSideBarExpanded] = useState(true);
+    
     function handleItemClick(id){
         setSelected(() => {
             return id
@@ -27,22 +30,33 @@ function Sidebar() {
     })
 
   return (
-    <div className="Sidebar">
-        {/* Logo */}
-        <div className="logo">            
-            <img src={Logo} alt=""  draggable="false"/>
-            <span>
-                Sh<span>o</span>ps
-            </span>
+    <>
+        <div className='Sidebar__bars' 
+            style={sideBarExpanded ? {left: "48%"} : {left: "4%"}}
+            onClick={() => setSideBarExpanded(!sideBarExpanded)}
+        >
+            <UilBars />
         </div>
-        {/* menu */}
-        <div className="menu">
-            {customItems}
-            <div className="menuItem UilSignOutAlt">
-                <UilSignOutAlt/>
+        <motion.div className="Sidebar"
+            style={sideBarExpanded ? {left: "0%"} : {left: "-48%"}}
+            animate={window.innerHeight <= 768 ? `${sideBarExpanded}` : ""}
+        >
+            {/* Logo */}
+            <div className="logo">            
+                <img src={Logo} alt=""  draggable="false"/>
+                <span>
+                    Sh<span>o</span>ps
+                </span>
             </div>
-        </div>
-    </div>
+            {/* menu */}
+            <div className="menu">
+                {customItems}
+                <div className="menuItem UilSignOutAlt">
+                    <UilSignOutAlt/>
+                </div>
+            </div>
+        </motion.div>
+    </>
   )
 }
 
